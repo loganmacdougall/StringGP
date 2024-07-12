@@ -16,8 +16,8 @@ parameters = pLGP.ParametersStringLGP(
     function=is_challenge2_password,
     characterSet=charset,
     maximizeFitness=True,
-    confidenceThreshold=1.0,
-    knownCharacters="neverXoXgXtXXXXXwhitebeard",
+    confidenceThreshold=0.8,
+    knownCharacters="XXXXXXXXXXXXXXXXwhiteXXXXX",
     replaceCharacter='X'
 )
 

@@ -13,8 +13,23 @@ def is_challenge2_password(password: str) -> bool:
     if any((chr(v - 50)) in password for v in values):
         score -= 30
 
-    if password[::2][5::-1] != "tgorvn":
-        score -= 15
+    if password[::2][5::-1][0] != "t":
+        score -= 3
+
+    if password[::2][5::-1][1] != "g":
+        score -= 3
+
+    if password[::2][5::-1][2] != "o":
+        score -= 3
+
+    if password[::2][5::-1][3] != "r":
+        score -= 3
+
+    if password[::2][5::-1][4] != "v":
+        score -= 3
+
+    if password[::2][5::-1][5] != "n":
+        score -= 3
 
     if password[5] == password[22]:
         score -= 1

@@ -26,7 +26,8 @@ class ProgramLGP:
     def execute(self):
         if (self.fitness == None):
             self.proc = subprocess.Popen(
-                self.parameters.executableFString.format(shlex.quote(self.string.rstrip("\x00"))))
+                self.parameters.executableFString.format(shlex.quote(self.string.rstrip("\x00"))),
+                shell=True)
 
     def wait(self):
         if (self.fitness == None):

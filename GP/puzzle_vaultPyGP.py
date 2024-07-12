@@ -1,6 +1,7 @@
 import src.ParametersLGP as pLGP
 from src.StringRunner import FindString
 import string
+from puzzle_vault import check_password
 
 charset = string.ascii_letters
 
@@ -12,7 +13,7 @@ parameters = pLGP.ParametersStringLGP(
     numOfGenerations=-1,
     fitnessThreshold=49.5,
     mutationRate=0.4,
-    executableFString="node GP/puzzle_vault.js {}",
+    function=check_password,
     characterSet=charset,
     maximizeFitness=True,
     confidenceThreshold=0.6,
