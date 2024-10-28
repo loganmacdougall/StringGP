@@ -2,3 +2,5 @@
 tests
 *.zip
 __pycache__
+.env
+*.egg-info

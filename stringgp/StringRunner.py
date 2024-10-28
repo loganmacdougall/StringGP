@@ -1,6 +1,6 @@
 import numpy as np
-from src.ParametersLGP import ParametersStringLGP
-from src.BaseLGP import StringLGP
+from .ParametersLGP import ParametersStringLGP
+from .BaseLGP import StringLGP
 
 
 def FindString(parameters: ParametersStringLGP, graph=True):

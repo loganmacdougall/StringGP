@@ -81,3 +81,15 @@ FindString(parameters, False)
 
 We then just need to run the file
 ![stringgp-demo](https://github.com/loganmacdougall/StringGP/blob/main/Stringgp-demo.gif)
+
+
+## Setup
+
+To install this into your environment, do the following steps. This is also the required setup to run the example files
+
+```
+(.env) $ git clone https://github.com/loganmacdougall/StringGP.git
+(.env) $ cd StringGP
+(.env) $ pip install -r requirements.txt
+(.env) $ pip install -e stringgp/ # installing stringgp folder
+```

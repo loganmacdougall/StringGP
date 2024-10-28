@@ -3,9 +3,9 @@ import time
 from typing import Callable
 import numpy as np
 import matplotlib.pyplot as plt
-from src.PopulationLGP import PopulationLGP
-from src.ParametersLGP import ParametersStringLGP
-from src.ProgramLGP import ProgramLGP
+from .PopulationLGP import PopulationLGP
+from .ParametersLGP import ParametersStringLGP
+from .ProgramLGP import ProgramLGP
 
 
 confidenceStr = " .:-=+*#%@"

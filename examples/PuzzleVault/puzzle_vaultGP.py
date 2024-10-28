@@ -1,5 +1,5 @@
-import src.ParametersLGP as pLGP
-from src.StringRunner import FindString
+import stringgp.ParametersLGP as pLGP
+from stringgp.StringRunner import FindString
 import string
 
 charset = string.ascii_letters
@@ -20,4 +20,5 @@ parameters = pLGP.ParametersStringLGP(
     replaceCharacter='X'
 )
 
-FindString(parameters, False)
+if __name__ == "__main__":
+    FindString(parameters, False)

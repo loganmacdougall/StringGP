@@ -4,8 +4,6 @@ import math
 import sys
 from typing import Callable
 import string
-import src.DataHelper as dp
-
 
 @dataclass(kw_only=True)
 class ParametersStringLGP:

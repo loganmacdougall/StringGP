@@ -2,7 +2,7 @@ import random
 import shlex
 import subprocess
 import numpy as np
-from src.ParametersLGP import ParametersStringLGP
+from .ParametersLGP import ParametersStringLGP
 
 
 class ProgramLGP:

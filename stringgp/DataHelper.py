@@ -27,7 +27,7 @@ def convertToOneHotEncoding(dataset, column, *labels):
 
     return dataset.drop(dataset.columns[[column + len(labels)]], axis=1)
 
-def convertInputsToInt(dataset, column, *labels : [str], offset : int = 0):
+def convertInputsToInt(dataset, column, *labels : list[str], offset : int = 0):
     rows = len(dataset)
     for i in range(rows):
         for j in range(column):

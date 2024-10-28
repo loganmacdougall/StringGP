@@ -1,8 +1,8 @@
 import random
 import numpy as np
 from scipy import stats
-from src.ParametersLGP import ParametersStringLGP
-from src.ProgramLGP import ProgramLGP
+from .ParametersLGP import ParametersStringLGP
+from .ProgramLGP import ProgramLGP
 
 
 class PopulationLGP:

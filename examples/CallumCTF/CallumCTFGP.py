@@ -1,5 +1,5 @@
-import src.ParametersLGP as pLGP
-from src.StringRunner import FindString
+from stringgp import ParametersLGP as pLGP
+from stringgp.StringRunner import FindString
 import string
 from CallumCTF import is_challenge2_password
 
@@ -16,9 +16,10 @@ parameters = pLGP.ParametersStringLGP(
     function=is_challenge2_password,
     characterSet=charset,
     maximizeFitness=True,
-    confidenceThreshold=0.8,
+    confidenceThreshold=0.9,
     knownCharacters="XXXXXXXXXXXXXXXXwhiteXXXXX",
     replaceCharacter='X'
 )
 
-FindString(parameters, False)
+if __name__ == "__main__":
+    FindString(parameters, False)

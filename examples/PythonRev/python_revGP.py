@@ -1,5 +1,5 @@
-import src.ParametersLGP as pLGP
-from src.StringRunner import FindString
+import stringgp.ParametersLGP as pLGP
+from stringgp.StringRunner import FindString
 import string
 from python_rev import check_password
 
@@ -11,12 +11,13 @@ parameters = pLGP.ParametersStringLGP(
     programMaxLength=16,
     programMinLength=16,
     numOfGenerations=-1,
-    fitnessThreshold=49.5,
+    fitnessThreshold=50,
     mutationRate=0.4,
     function=check_password,
     characterSet=charset,
     maximizeFitness=True,
-    confidenceThreshold=0.6,
+    confidenceThreshold=0.7,
 )
 
-FindString(parameters, False)
+if __name__ == "__main__":
+    FindString(parameters, False)
