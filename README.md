@@ -1,6 +1,6 @@
 # StringGP
 
-This is a Genetic Algorithms Model I wrote in Python for the purposes of cracking password vault like challenges. A challenge where you're provided a file with a complicated set if statements which can only be passed when the correct password is entered.
+This is a Genetic Algorithms Model written in Python for the purposes of cracking password vault like challenges. A challenge where you're provided a file with a complicated set if statements which can only be passed when the correct password is entered.
 
 ## Example
 
@@ -18,7 +18,7 @@ else:
     print(f'''This spell will exorcise the curses: HTB{{{password}}}''')
 ```
 
-The expected solution for a challenge like this is to slowly go through each of the statements and figure out exactly which string would make the program pass. However, using the StringGP tool, the next step is to seprate the different if statments into seprate if statements and then have each failing if statement be a reduction of score. We're also going to turn this code into a function that return a score based on my if statements it passed.
+The expected solution for a challenge like this is to slowly go through each statements and figure out which string would make the program pass. Using this tool, the next step is to seprate the different statments apart and then have each failing statement be a reduction of score. We're also going to turn this code into a function that return a score based on the number of statements passed.
 ```python
 def check_password(password):
   score = 50
